@@ -1,0 +1,65 @@
+/* RESET */
+
+{ margin: 0; padding: 0; box-sizing: border-box; }
+
+/* FUNDO DO SITE */ body { font-family: Georgia, serif; background: linear-gradient(135deg, #f5eaff, #ead8fa, #dfc5f3); color: #54276f; }
+
+/* CABEÇALHO */ header { background: linear-gradient(135deg, #b98bd8, #d5b5ed); text-align: center; padding: 35px 20px; border-bottom: 3px solid #a77bc9; box-shadow: 0 4px 12px rgba(80, 35, 110, 0.15); }
+
+header h1 { font-size: 36px; color: #572477; margin-bottom: 12px; }
+
+header p { font-size: 16px; color: #684080; }
+
+/* ÁREA PRINCIPAL */ main { max-width: 1250px; margin: auto; padding: 40px 25px; }
+
+/* ORGANIZAÇÃO DAS FRUTAS */ .frutas { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 25px; }
+
+/* CARDS */ .card { background: #fffaff; border: 2px solid #d5b5ed; border-radius: 20px; padding: 18px;
+
+text-align: center;
+
+box-shadow: 0 5px 15px rgba(95, 45, 125, 0.12);
+
+transition: all 0.3s ease;
+
+overflow: hidden;
+
+
+}
+
+/* EFEITO AO PASSAR O MOUSE */ .card:hover { transform: translateY(-7px); box-shadow: 0 10px 22px rgba(95, 45, 125, 0.25); border-color: #a875cf; }
+
+/* IMAGENS DAS FRUTAS */ .card img { display: block; width: 100%; max-width: 180px; height: 160px;
+
+object-fit: contain;
+
+margin: 0 auto 15px;
+border-radius: 12px;
+
+
+}
+
+/* NOME DAS FRUTAS */ .card h2 { font-size: 18px; color: #713c91; margin-bottom: 10px; }
+
+/* TIPO DAS FRUTAS */ .card p { font-size: 14px; color: #a078b5; background: #f2e5fc; display: inline-block; padding: 6px 14px; border-radius: 20px; }
+
+/* RODAPÉ */ footer { background: #c7a0e3; text-align: center; padding: 25px; margin-top: 30px; color: #572477; border-top: 2px solid #b58bd5; }
+
+/* TABLETS */ @media (max-width: 900px) { .frutas { grid-template-columns: repeat(2, 1fr); } }
+
+/* CELULARES */ @media (max-width: 550px) { .frutas { grid-template-columns: 1fr; }
+
+header h1 {
+    font-size: 27px;
+}
+
+main {
+    padding: 25px 15px;
+}
+
+.card img {
+    height: 170px;
+}
+
+
+}
